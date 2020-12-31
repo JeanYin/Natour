@@ -1,0 +1,27 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"concurrently --kill-others \"npm run compile:sass\" \"live-server\"",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeanYin/Natour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeanYin/Natour/issues"
+  },
+  "homepage": "https://github.com/JeanYin/Natour#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "live-server": "^1.2.1"
+  }
+}
