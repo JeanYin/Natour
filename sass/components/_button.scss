@@ -33,6 +33,14 @@
     }
   }
 
+  &--green {
+    background-color: $color-parimary;
+    color: $color-white;
+    &::after {
+      background-color: $color-parimary;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
